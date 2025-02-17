@@ -44,7 +44,7 @@ These scripts allow users to:
 - **Purpose**: This script retrieves patient data and updates the wmdaId field in a local database. It checks for existing wmdaId values and only updates records where the field is empty or NULL.
 - **How to Run**:
   ```bash
-  python3 update_WMDA_ID.py
+  python3 update_wmda_ID.py
 
 ### 3. `update_patient.py`
 - **Purpose**: This script is designed to update existing patient data on the WMDA (World Marrow Donor Association) API using information stored in an local database. 
