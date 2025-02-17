@@ -81,3 +81,12 @@ These scripts allow users to:
 - **How to Run**:
   ```bash
   python3 patientsummary.py
+
+# Requirements
+- **Must have a .env file containing WMDA credentials in /WMDA_Project/wmda_match/modules in the following format:**
+TENANT_ID=
+RESOURCE_ID=
+CLIENT_ID=
+CLIENT_SECRET=
+USER_AGENT=
+API_URL=
