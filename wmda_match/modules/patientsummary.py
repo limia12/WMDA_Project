@@ -90,16 +90,16 @@ def get_search_summary(search_id):
     else:
         print(f"Error retrieving search summary: {response.status_code}, Response: {response.text}")
 
-# # Main function to run the script
-# def main():
-#     patient_id = input("Enter the Patient ID (DONN_NUMERO): ")
+# Main function to run the script
+def main():
+    patient_id = input("Enter the Patient ID (DONN_NUMERO): ")
 
-#     # Retrieve SearchID for the given Patient ID
-#     search_id = get_search_id(patient_id)
+    # Retrieve SearchID for the given Patient ID
+    search_id = get_search_id(patient_id)
 
-#     if search_id:
-#         # Retrieve search summary for the found SearchID
-#         get_search_summary(search_id)
+    if search_id:
+        # Retrieve search summary for the found SearchID
+        get_search_summary(search_id)
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

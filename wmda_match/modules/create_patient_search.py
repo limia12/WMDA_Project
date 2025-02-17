@@ -110,19 +110,19 @@ def start_patient_search(wmda_id, donor_id):
         # Handle errors (e.g., bad request, unauthenticated, etc.)
         print(f"Error starting/updating search: {response.status_code}, Response: {response.text}")
 
-# # Main function to run the script
-# def main():
-#     donor_id = input("Enter the donor ID: ")
+# Main function to run the script
+def main():
+    donor_id = input("Enter the donor ID: ")
 
-#     # Retrieve wmdaId from the database
-#     wmda_id = get_wmda_id(donor_id)
+    # Retrieve wmdaId from the database
+    wmda_id = get_wmda_id(donor_id)
 
-#     if wmda_id:
-#         # Start or update the patient search using the wmdaId
-#         start_patient_search(wmda_id, donor_id)
-#     else:
-#         print("wmdaId not found. Aborting search.")
+    if wmda_id:
+        # Start or update the patient search using the wmdaId
+        start_patient_search(wmda_id, donor_id)
+    else:
+        print("wmdaId not found. Aborting search.")
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 

@@ -84,18 +84,18 @@ def get_patient_searches(wmda_id):
     else:
         print(f"Error retrieving search results: {response.status_code}, Response: {response.text}")
 
-# # Main function to run the script
-# def main():
-#     donor_id = input("Enter the donor ID: ")
+# Main function to run the script
+def main():
+    donor_id = input("Enter the donor ID: ")
 
-#     # Retrieve wmdaId from the database
-#     wmda_id = get_wmda_id(donor_id)
+    # Retrieve wmdaId from the database
+    wmda_id = get_wmda_id(donor_id)
 
-#     if wmda_id:
-#         # Retrieve all patient search results
-#         get_patient_searches(wmda_id)
-#     else:
-#         print("wmdaId not found. Aborting search retrieval.")
+    if wmda_id:
+        # Retrieve all patient search results
+        get_patient_searches(wmda_id)
+    else:
+        print("wmdaId not found. Aborting search retrieval.")
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

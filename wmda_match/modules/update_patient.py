@@ -116,18 +116,18 @@ def update_patient(donor):
         print(f"Error updating patient: {response.status_code}, Response: {response.text}")
 
 
-# # Main function to run the script
-# def main():
-#     donor_id = input("Enter the donor ID to update: ")
+# Main function to run the script
+def main():
+    donor_id = input("Enter the donor ID to update: ")
 
-#     # Retrieve existing patient data from the database
-#     donor = get_existing_patient_data(donor_id)
+    # Retrieve existing patient data from the database
+    donor = get_existing_patient_data(donor_id)
 
-#     if donor:
-#         # Update patient on WMDA API
-#         update_patient(donor)
-#     else:
-#         print("Donor not found in database.")
+    if donor:
+        # Update patient on WMDA API
+        update_patient(donor)
+    else:
+        print("Donor not found in database.")
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

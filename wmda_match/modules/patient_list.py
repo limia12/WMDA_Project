@@ -86,16 +86,16 @@ def get_patient_data(bearer_token):
         print(f"Failed to retrieve data. Status Code: {response.status_code}")
         print("Response:", response.text)
 
-# # Main execution flow
-# def main():
-#     # Step 1: Retrieve the Bearer Token
-#     bearer_token = get_bearer_token()
-#     if not bearer_token:
-#         print("Failed to retrieve bearer token.")
-#         return
+# Main execution flow
+def main():
+    # Step 1: Retrieve the Bearer Token
+    bearer_token = get_bearer_token()
+    if not bearer_token:
+        print("Failed to retrieve bearer token.")
+        return
 
-#     # Step 2: Retrieve and display patient data
-#     get_patient_data(bearer_token)
+    # Step 2: Retrieve and display patient data
+    get_patient_data(bearer_token)
 
-# # Run the script
-# main()
+# Run the script
+main()
