@@ -1,0 +1,17 @@
+# Bytecode and cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment variables
+wmda_match/modules/.env
+
+# Databases
+*.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
