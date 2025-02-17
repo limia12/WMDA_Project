@@ -2,6 +2,29 @@
 
 This repository contains a set of Python scripts designed for interacting with the WMDA (World Marrow Donor Association) API, managing patient data, and performing various related tasks.
 
+# WMDA API Integration Scripts
+
+# **INSTALLATION**
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/limia12/WMDA_Project.git
+```
+### 2. Install and Activate Environment
+```bash
+conda env create -f environment.yml
+conda activate WMDA_project
+```
+### 3. Install required files
+```bash
+pip install -r requirements.txt
+```
+### 3. Navigate to correct directory
+```bash
+cd WMDA_Project/wmda_match/modules
+```
+# **RUNNING SCRIPTS**
+
 ## Overview
 
 These scripts allow users to:
