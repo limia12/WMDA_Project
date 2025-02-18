@@ -10,16 +10,20 @@ This repository contains a set of Python scripts designed for interacting with t
 ```bash
 git clone https://github.com/limia12/WMDA_Project.git
 ```
-### 2. Install and Activate Environment
+### 2. Navigate to correct directory
+```bash
+cd WMDA_Project
+
+### 3. Install and Activate Environment
 ```bash
 conda env create -f environment.yml
 conda activate WMDA_project
 ```
-### 3. Install required files
+### 4. Install required files
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Navigate to correct directory
+### 5. Navigate to correct directory
 ```bash
 cd WMDA_Project/wmda_match/modules
 ```
