@@ -13,7 +13,7 @@ RESOURCE_ID = os.getenv("RESOURCE_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 USER_AGENT = os.getenv("USER_AGENT")  # Loaded from .env file
-API_URL = os.getenv("API_URL")  # Loaded from .env file
+API_URL_SEARCH = "https://sandbox-search-api.wmda.info/api/v2/searches/patientSearches/{wmdaId}"
     
 def get_bearer_token():
     # Construct the token URL
@@ -68,7 +68,7 @@ def get_patient_searches(wmda_id):
         return
 
     # Send a GET request to fetch search results
-    url = API_URL.format(wmdaId=wmda_id)
+    url = API_URL_SEARCH.format(wmdaId=wmda_id)
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
