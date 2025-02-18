@@ -59,8 +59,6 @@ def get_wmda_id(donor_id):
 # Function to retrieve all search results for a patient using their wmdaId
 def get_patient_searches(wmda_id):
 
-    USER_AGENT = os.getenv("USER_AGENT")
-    API_URL = os.getenv("API_URL")
     # Get Bearer Token
     token = get_bearer_token()
     if not token:
