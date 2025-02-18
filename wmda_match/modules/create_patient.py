@@ -14,7 +14,7 @@ RESOURCE_ID = os.getenv("RESOURCE_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 USER_AGENT = os.getenv("USER_AGENT")  # Loaded from .env file
-API_URL = os.getenv("API_URL")  # Loaded from .env file
+API_URL = "https://sandbox-search-api.wmda.info/api/v2/patients"
     
 def get_bearer_token():
     # Construct the token URL
