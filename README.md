@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 ### 5. Navigate to correct directory
 ```bash
-cd WMDA_Project/wmda_match/modules
+cd /wmda_match/modules
 ```
 # **RUNNING SCRIPTS**
 
