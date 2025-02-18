@@ -16,7 +16,7 @@ cd WMDA_Project
 ```
 ### 3. Install and Activate Environment
 ```bash
-conda env create -f environment.yml
+conda env create -f WMDA_project.yml
 conda activate WMDA_project
 ```
 ### 4. Install required files
