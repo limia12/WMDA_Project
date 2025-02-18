@@ -45,8 +45,7 @@ def get_bearer_token():
 
 # Step 2: Retrieve patient data using GET request
 def get_patient_data(bearer_token):
-    USER_AGENT = os.getenv("USER_AGENT")
-    API_URL = os.getenv("API_URL")
+    
     # Parameters for the API request
     params = {
         "Limit": 100,  # Maximum number of patients per page
