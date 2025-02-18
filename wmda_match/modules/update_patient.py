@@ -58,8 +58,6 @@ def get_existing_patient_data(donor_id):
 
 # Function to update an existing patient on WMDA
 def update_patient(donor):
-    USER_AGENT = os.getenv("USER_AGENT")
-    API_URL = os.getenv("API_URL")
     
     # Extracting the data from the donor
     patient_data = {
