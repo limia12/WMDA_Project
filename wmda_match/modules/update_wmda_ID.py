@@ -54,9 +54,6 @@ def get_patient_data(bearer_token):
     Returns:
         list: A list of patient data retrieved from the API.
     """
-    # Fetch the environment variables for the User-Agent and API URL
-    USER_AGENT = os.getenv("USER_AGENT")  # This is set in the .env file for the custom User-Agent
-    API_URL = os.getenv("API_URL")  # The URL of the API where patient data will be fetched from
 
     # Parameters to send with the API request (limit, offset, etc.)
     params = {
