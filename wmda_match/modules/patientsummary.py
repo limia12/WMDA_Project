@@ -13,7 +13,7 @@ RESOURCE_ID = os.getenv("RESOURCE_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 USER_AGENT = os.getenv("USER_AGENT")  # Loaded from .env file
-API_URL = os.getenv("API_URL")  # Loaded from .env file
+API_URL_SEARCH = "https://sandbox-search-api.wmda.info/api/v2/searches/{searchId}"  # Modified URL with placeholder
     
 def get_bearer_token():
     # Construct the token URL
@@ -65,8 +65,6 @@ def get_search_id(patient_id):
 # Function to retrieve search summary for a specific searchId
 def get_search_summary(search_id):
 
-    USER_AGENT = os.getenv("USER_AGENT")
-    API_URL = os.getenv("API_URL")
     # Get Bearer Token
     token = get_bearer_token()
     if not token:
@@ -74,7 +72,7 @@ def get_search_summary(search_id):
         return
 
     # Send a GET request to fetch search summary
-    url = API_URL.format(searchId=search_id)
+    url = API_URL_SEARCH.format(searchId=search_id)  # Correct formatting of the URL
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
