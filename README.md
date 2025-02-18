@@ -13,7 +13,7 @@ git clone https://github.com/limia12/WMDA_Project.git
 ### 2. Navigate to correct directory
 ```bash
 cd WMDA_Project
-
+```
 ### 3. Install and Activate Environment
 ```bash
 conda env create -f environment.yml
