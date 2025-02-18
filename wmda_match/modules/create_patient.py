@@ -126,10 +126,6 @@ def create_patient(donor):
         print("Unable to get bearer token. Aborting.")
         return
 
-    # Retrieve USER_AGENT and API_URL from environment variables (loaded from .env file)
-    USER_AGENT = os.getenv("USER_AGENT")
-    API_URL = os.getenv("API_URL")
-
     # Prepare the headers for the HTTP request
     headers = {
         "Authorization": f"Bearer {token}",  # Authorization header with Bearer token
