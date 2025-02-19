@@ -146,5 +146,3 @@ def main():
 
 # Run the main function to start the execution
 main()
-
-
