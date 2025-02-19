@@ -5,6 +5,7 @@ __pycache__/
 
 # Environment variables
 wmda_match/modules/.env
+tests/.env
 
 # Databases
 *.db
